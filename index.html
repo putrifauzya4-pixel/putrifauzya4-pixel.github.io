@@ -7,174 +7,135 @@
   <title></title>
 </head>
 
-<body><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Cafe Kopi</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Profil Restoran</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            color: #222;
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: #222;
+    background-color: #e9edf0;
+    background-image:
+    linear-gradient(45deg, #dce1e5 25%, transparent 25%),
+    linear-gradient(-45deg, #dce1e5 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #dce1e5 75%),
+    linear-gradient(-45deg, transparent 75%, #dce1e5 75%);
+    background-size: 100px 100px;
+}
 
-            /* Background sederhana */
-            background: #e9ecef;
-        }
+header {
+    text-align: center;
+    padding: 30px 10px;
+}
 
-        .container {
-            max-width: 700px;
-            margin: auto;
-        }
+.logo {
+    font-size: 100px;
+}
 
-        .logo {
-            text-align: center;
-            margin-top: 20px;
-        }
+nav {
+    margin: 20px;
+}
 
-        .logo img {
-            width: 220px;
-        }
+nav a {
+    color: purple;
+    font-size: 20px;
+}
 
-        .menu {
-            text-align: center;
-            margin: 20px 0;
-            font-size: 18px;
-        }
+h1 {
+    font-size: 38px;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 60px;
+}
 
-        .menu a {
-            color: purple;
-            font-weight: bold;
-        }
+h2 {
+    font-size: 28px;
+    font-weight: normal;
+}
 
-        h1 {
-            text-align: center;
-            font-size: 42px;
-            margin-top: 50px;
-        }
+p {
+    font-size: 18px;
+    line-height: 1.8;
+}
 
-        .slogan {
-            text-align: center;
-            font-size: 22px;
-            font-style: italic;
-            margin: 50px 0 30px;
-        }
+.quote {
+    text-align: center;
+    font-style: italic;
+    margin-top: 60px;
+}
 
-        hr {
-            border: none;
-            border-top: 1px solid #999;
-        }
+section {
+    padding: 20px;
+}
 
-        .deskripsi {
-            font-size: 22px;
-            line-height: 1.6;
-        }
+hr {
+    margin: 30px 0;
+}
 
-        .highlight {
-            background: yellow;
-        }
-
-        h2 {
-            font-size: 32px;
-        }
-
-        li {
-            font-size: 21px;
-            margin: 10px;
-        }
-
-        .footer {
-            text-align: center;
-            margin-top: 60px;
-            color: #666;
-        }
-
-        /* Tabel jadwal */
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            font-size: 20px;
-            background: white;
-        }
-
-        th, td {
-            border: 1px solid #555;
-            padding: 18px;
-            text-align: left;
-        }
-
-        th {
-            font-weight: normal;
-        }
-
-        .keterangan {
-            font-style: italic;
-        }
-    </style>
+footer {
+    text-align: center;
+    color: gray;
+    padding: 30px;
+}
+</style>
 </head>
 
 <body>
 
-<div class="container">
-
-    <div class="logo">
-        <!-- Kalau punya gambar logo, masukkan nama file gambarnya di sini -->
-        <img src="logo.png" alt="Logo Cafe">
-    </div>
-
-    <div class="menu">
-        <a href="index.html">Beranda</a>
-        |
+<header>
+    <div class="logo">🍽️</div>
+    <nav>
+        <a href="index.html">Beranda</a> |
         <a href="jadwal.html">Jadwal Operasional</a>
-    </div>
+    </nav>
+</header>
 
-    <h1>Selamat Datang di Kopi Kampus.</h1>
+<section id="beranda">
+    <h1>Selamat Datang di Restoran Lezat</h1>
 
-    <div class="slogan">
-        "Tempat terbaik untuk tugas, diskusi, dan menjemput inspirasi."
-    </div>
+    <p class="quote">
+        "Tempat terbaik untuk menikmati
+        makanan lezat bersama keluarga."
+    </p>
 
     <hr>
 
-    <p class="deskripsi">
-        Cafe Kopi didirikan sejak tahun 2026 untuk mendukung
-        produktivitas Programer dalam menyelesaikan tugas coding.
-        Kami berkomitmen menyajikan racikan kopi berkualitas tinggi
-        namun tetap dengan
-        <span class="highlight">harga yang sangat terjangkau</span>
-        bagi kantong programer profesional.
+    <p>
+        Restoran Lezat didirikan sejak tahun 2026
+        untuk memberikan pengalaman makan yang
+        menyenangkan bagi pelanggan. Kami
+        berkomitmen menyajikan makanan
+        berkualitas tinggi dengan
+        <mark>harga yang sangat terjangkau</mark>
+        bagi semua pelanggan.
     </p>
 
     <h2>Menu Favorit Kami</h2>
 
     <ul>
-        <li>Minuman
-            <ul>
-                <li>Kopi Susu Aren</li>
-                <li>Green Tea Latte</li>
-            </ul>
-        </li>
-
         <li>Makanan
             <ul>
-                <li>Roti Bakar Cokelat</li>
-                <li>Kentang Goreng</li>
+                <li>Nasi Goreng</li>
+                <li>Ayam Bakar</li>
+            </ul>
+        </li>
+        <li>Minuman
+            <ul>
+                <li>Es Teh</li>
+                <li>Jus Jeruk</li>
             </ul>
         </li>
     </ul>
+</section>
 
-    <div class="footer">
-        Created by Dede Iyan Supardi @2026
-    </div>
-
-</div>
+<footer>
+    Created by tiara @2026
+</footer>
 
 </body>
-</html>
-  
-</body>
-
 </html>
